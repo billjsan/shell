@@ -10,4 +10,4 @@
 **unset var** - deleta a var de abiente
 **unset var[5]** - deleta o item do array
 **var[1]='novo_item'** - insere um item no array 
-
+mais um 
