@@ -8,5 +8,5 @@
 - **echo $var** - mostra o valor da var de ambiente
 - **echo ${var[*]}** - mostra todo o conteudo do array
 - **unset var** - deleta a var de abiente
-- **unset var[5]** - deleta o item do array
+- **unset var[5]** - deleta o item do array pelo índice
 - **var[1]='novo_item'** - insere um item no array 
