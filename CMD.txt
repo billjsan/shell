@@ -1,0 +1,88 @@
+NOVOS COMANDOS LUNUX 
+
+
+<<<<FERRAMENTAS>>>>
+cal  >>abre o calendario
+gnome-calculator  >>abre a calculadora
+rhythmbox  >>abre o tocador de audio 
+firefox  >> abre o mozilla firefox
+nano [nome do arquivo] abre o arquivo no nano pelo cmd
+sudo openvpn --config client.ovpn --auth-user-pass --auth-retry interact  >> logar no VPN
+gedit [arquivo]  >> abre um arquivo no bloco de notas
+source ~/.bashrc >>recarega as configuraçoes do bashrc
+typeset -f > mostra as funcoes no sistema
+
+=== Build Server ===
+AKCp8k7am1FcDiinEYHFZbBfApZrtjuyrchiAEk4NaTe54JUeR5M1SdW3sULtHm3BpaC3X7Cv
+
+
+=== Android ===
+
+adb devices >> mostra os disp. android
+
+=== vim ====
+
+i >> insert
+:w >>  write
+:q >>  quit
+u >> undo
+
+=== tmux ===
+
+tmux new -s <nome> >> nova janela
+CTRL+b d >> sai da janela sem fechar
+tmux ls >> mostra as sessoes ativas
+tmux a -t <nome da sessao>
+CTRL+b c <nova janela>
+CRTL+b , <muda o nome da janela>
+CRTL+b % <cria tab vertical>
+CRTL+b " <cria tab horizontal>
+CRTL+b z <zoom em uma tab>
+
+=== Git ===
+ 
+git config --list > lista as conf. atuais
+git rm --cachaed <arquivo> >remove arquivo dos arquivos trackeados
+git remote -v > mostra o local dos repositorios remotos
+git init --bare > cria um repo "servidor"
+git remote add <nomeServer> <url>
+git remote rename <nomeAtual> <novoNome>
+git log -p >mostra os arquivos alterados
+git log --graph > mostra uma linha de desenvolvmento
+git log --oneline >mostra as informações em uma linha
+git rebase <branch> > faz a juncao das branches sem pcisar d commit
+git rebase -i <cod_commits ou HEAD~qtd_commits> > iterativo junta uma qtd de comit em um só (pick, s=squash)
+git revert <hash> >desfaz um commit(mantem o log do commit, exclui as modificaçoes)
+git checkou --<arquivo> >descarta alteraçoes
+git checkout <hash> > volta para o commit especifico (novo branch p/ salvar as alterações a partir daí) 
+git reset HEAD <arquivo> mantem as alterações mas desmarca como p/ commitar
+git stash > salva os arquivos alterados para usar depois (nao eh commit) 
+git stash list > mostra a lista de stashes
+git stash pop > pega a ultima stash para o estado atual
+git stash apply <nStash> >aplica mudanças da stash especificada
+git stash drop <nStash> remove stash especificada
+git show <hash_commit> >mostra as alteracoes daquele commit
+git diff <hash>..<hash> > mostra a diferença entre dois commits*
+git tag -a <nomeTag> -m"msg" > cria um marco (release)
+git cherry-pick <hash> >pega um commit especifico e tras pra o HEAD
+git bisect start >inicia o modo de busca dentro dos commits
+  git bisect bad HEAD  > ponto no qual estou, onde estah ruim 
+  git bisect good <mimmit_hash> >limite da busca, ate onde vou buscar
+  git bisect good/bad >para confirmar ou continuar buscando 
+  git bisect reset >finaliza a busca
+git blame <hash_commit> > mostra quem alterou as linhas do arquivo
+  
+  
+
+
+<<<<GERENCIADOR DE ARQUIVOS>>>>
+
+
+
+
+nautilus .  >> Abre uma pasta do diretorio atual 
+xdg-open [arquivo] >> abre o arquivo com o aplicativo padrão 
+cmp [arqv1 arqv2] >> compara os dois arquivos
+lsusb >> mostra os disp. usb
+touh >> cria um arquivo 
+ps aux >> lista os processos
